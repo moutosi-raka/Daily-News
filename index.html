@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily News</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- font awasome -->
+  <script src="https://kit.fontawesome.com/6f62742bdc.js" crossorigin="anonymous"></script>
+
+  <!-- css link -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class=" bg-light">
+  <header>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light ">
+      <div class="container border-bottom py-4 ">
+        <a class="navbar-brand fw-bolder fs-6" href="#"><span class="bg-primary px-2 py-1 rounded text-white me-2">
+            Daily</span> <span class="text-primary">News</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav d-inline-flex mt-2 mt-md-0 ms-md-auto">
+            <li class="nav-item">
+              <a class="nav-link active text-primary fw-bolder" aria-current="page" href="index.html">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-muted" href="blog.html">Blog</a>
+            </li>
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- category start -->
+    <section class="container">
+      <ul id="category-container" class="d-flex flex-md-row flex-column text-center justify-content-between list-unstyled  py-3">
+
+      </ul>
+    </section>
+    <!-- category end -->
+  </header>
+
+  <main>
+
+    <section class="container my-5">
+      <!-- No found message  -->
+      <div id="category-msg" class="bg-white w-80 h-25 p-2 d-none">
+        <h6 id="category-items"></h6>
+      </div>
+    </section>
+
+    <!-- card -->
+    <section class="container">
+      <div id="card-container">
+
+      </div>
+
+
+    </section>
+
+     <!-- add spinner -->
+     <section id="loader" class="d-none">
+      <div style="height: 200px;" class="d-flex justify-content-center align-items-center">
+          <div class="spinner-border" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+        </div>
+   </section>
+
+  <!-- modal -->
+  <div class="modal fade" id="showModal" tabindex="-1" aria-labelledby="showNewsDetails" aria-hidden="true">
+    <div class="modal-dialog" style="max-width: 700px;">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" id="modal-cls-button" aria-label="Close"></button>
+        </div>
+        <div id="show-News-Details" class="modal-body">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <footer class="bg-white text-center w-100 py-2 fw-bold text-muted" >
+    <p>Copyright 2022 Daily News</p>
+  </footer>
+
+  </main>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
